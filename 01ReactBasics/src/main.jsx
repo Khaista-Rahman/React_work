@@ -1,5 +1,5 @@
 import React from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot } from 'react-dom/client.js'
 import App from './App.jsx'
 
 
@@ -11,7 +11,7 @@ const anotherInput = (
     <input type="text" placeholder='enter your name ' />
 )
 
-const ReactInput = React.createElement(
+const ReactInput = React.createElement(// first time create input in react
     'input',
     {type:'text' , placeholder: 'enter your name'}
 )
@@ -22,7 +22,7 @@ const reactElement = React.createElement(
     'click me to visit google'
 )
 
-const ReactBtn = React.createElement(
+const ReactBtn = React.createElement(// first time create a button in react
     'button',
     {
 

@@ -1,12 +1,12 @@
 
-import { useState } from "react";
+import { useState } from "react";// this is hooks alot work do from one click and this very important
 import Myfun from "./Myfile"
 // this is the good practice when ever you create a file and function the first letter will be capital this very important .
 
 
 
 function App() {
-
+  // hook using
   let [counter , setCounter] = useState(0)// this is simple startup number.
 
   function addNum () {
