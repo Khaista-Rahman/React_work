@@ -7,6 +7,7 @@ import Myfun from "./Myfile"
 
 function App() {
   // hook using
+  // the setCounter is simple just a refrance of that counter and you give any name what you want. (counter , chaiCounter , supermanCounter , anthing).
   let [counter , setCounter] = useState(0)// this is simple startup number.
 
   function addNum () {
@@ -14,6 +15,10 @@ function App() {
     console.log("button is clicked", counter)
   }
  
+  const removeNum = () => {
+    setCounter(counter - 1);
+    console.log("remove button is clicked", counter)
+  }
   return (
    <>
    <h1>chai aur code {counter}</h1>
@@ -21,7 +26,7 @@ function App() {
 
    <button onClick= {addNum}>add button {counter}</button>
    <br />
-   <button>remove button {counter}</button>
+   <button onClick={removeNum}>remove button {counter}</button>
    </>
    
   )
