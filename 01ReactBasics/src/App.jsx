@@ -11,13 +11,23 @@ function App() {
   let [counter , setCounter] = useState(0)// this is simple startup number.
 
   function addNum () {
-    setCounter(counter += 1);
-    console.log("button is clicked", counter)
+    if (counter === 20) {
+      counter = 0;
+      alert("oops! we can't count more number hehehe");
+      
+    } else {
+      setCounter(counter += 1);
+      console.log(counter)
+    }
   }
  
   const removeNum = () => {
-    setCounter(counter - 1);
-    console.log("remove button is clicked", counter)
+    if (counter <= 0) {
+      counter = 0;
+      alert ("negative value is not allow");
+    } else {
+      setCounter(counter - 1);
+    }
   }
   return (
    <>
