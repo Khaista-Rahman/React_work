@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 
 function App() {
+  
   let [inputText, setInputText] = useState("");
   let [tasks, setTasks] = useState([]); // Initialize tasks as an array
 
